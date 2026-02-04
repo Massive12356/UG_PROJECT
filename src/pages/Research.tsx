@@ -23,11 +23,6 @@ const researchAreas = [
   { title: "Health Global", image: R5 },
 ];
 
-const researchCollabCards = [
-  { title: "Research Ethics", image: R7 },
-  { title: "Research Policy", image: R8 },
-  { title: "Research Newsletter", image: R9 },
-];
 
 const Research = () => {
   return (
