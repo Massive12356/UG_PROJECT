@@ -75,7 +75,7 @@ const Departments = () => {
             <div className="max-w-7xl mx-auto w-full px-6">
               <div className="flex justify-between items-center gap-24">
                 <div className="max-w-xl">
-                  <h1 className="text-7xl font-bold text-white">Departments</h1>
+                  <h1 className="text-7xl font-bold text-white border-b-4 border-white pb-4">Departments</h1>
                 </div>
 
                 <div className="max-w-xl text-justify mt-36 border-white">

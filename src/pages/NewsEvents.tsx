@@ -34,7 +34,7 @@ const NewsEvents = () => {
             <div className="max-w-7xl mx-auto w-full px-6">
               <div className="flex justify-start items-center gap-24">
                 <div className="max-w-2xl">
-                  <h1 className="text-7xl font-bold text-white">News and Events</h1>
+                  <h1 className="text-7xl font-bold text-white border-b-4 border-white pb-4">News and Events</h1>
                 </div>
               </div>
             </div>

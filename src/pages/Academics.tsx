@@ -42,10 +42,10 @@ const Academics = () => {
               <div className="flex justify-between items-center gap-24">
                 
                 <div className="max-w-xl">
-                  <h1 className="text-7xl font-bold text-white">Academics</h1>
+                  <h1 className="text-7xl font-bold text-white border-b-4 border-white pb-4">Academics</h1>
                 </div>
 
-                <div className="max-w-xl text-justify mt-36 border-b-4 border-white">
+                <div className="max-w-xl text-justify mt-36">
                   <p className="text-2xl text-white leading-relaxed">
                     We offer excellent programs<br />
                     to fulfill the mission of the medical<br />
