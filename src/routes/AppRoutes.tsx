@@ -6,6 +6,7 @@ import Faculty from '../pages/Faculty';
 import Research from '../pages/Research';
 import NewsEvents from '../pages/NewsEvents';
 import AboutUs from '../pages/AboutUs';
+import CampusLife from '../pages/CampusLife';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: '/about-us',
     element: <AboutUs />,
+  },
+  {
+    path: '/campus-life',
+    element: <CampusLife />,
   },
 ]);
 
