@@ -12,6 +12,7 @@ interface NavItem {
 /* ---------- Navigation Config ---------- */
 
 const navItems: NavItem[] = [
+  { to: "/", label: "Home" },
   { to: "/academics", label: "Academics" },
   { to: "/departments", label: "Departments" },
   // { to: "/faculty", label: "Faculty" },

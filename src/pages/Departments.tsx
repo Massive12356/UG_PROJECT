@@ -10,10 +10,17 @@ const Departments = () => {
   // Fix: specify the type so numbers can be keys
   const [openAccordions, setOpenAccordions] = useState<{ [key: number]: boolean }>({});
 
-  const toggleAccordion = (index: number) => {
+  const handleMouseEnter = (index: number) => {
     setOpenAccordions({
       ...openAccordions,
-      [index]: !openAccordions[index],
+      [index]: true,
+    });
+  };
+
+  const handleMouseLeave = (index: number) => {
+    setOpenAccordions({
+      ...openAccordions,
+      [index]: false,
     });
   };
 
@@ -119,10 +126,13 @@ const Departments = () => {
               </div>
 
               {/* RIGHT — Accordion */}
-              <div className="lg:w-2/3">
+              <div 
+                className="lg:w-2/3"
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={() => handleMouseLeave(index)}
+              >
                 <button
-                  onClick={() => toggleAccordion(index)}
-                  className="w-full text-left text-blue-700 font-bold py-4 px-6 rounded-lg flex justify-between items-center focus:outline-none border border-blue-200"
+                  className="w-full text-left text-blue-700 font-bold py-4 px-6 rounded-lg flex justify-between items-center focus:outline-none border border-blue-200 cursor-pointer"
                 >
                   <span className="text-xl">{dept.title}</span>
                   <span className="text-2xl">{openAccordions[index] ? "−" : "+"}</span>
