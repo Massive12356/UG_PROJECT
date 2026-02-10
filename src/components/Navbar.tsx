@@ -137,7 +137,7 @@ const DesktopNavLink = ({ to, label }: NavItem) => {
       to={to}
       className={`font-bold uppercase text-[18px] transition-colors duration-300 ${
         isActive
-          ? 'text-yellow-400'
+          ? 'text-yellow-400 animate-bounce'
           : 'text-white hover:text-yellow-400'
       }`}
     >
@@ -160,7 +160,7 @@ const MobileNavLink = ({ to, label, onClick }: MobileNavLinkProps) => {
       onClick={onClick}
       className={`block text-lg font-semibold transition-colors duration-300 ${
         isActive
-          ? 'text-yellow-400'
+          ? 'text-yellow-400 animate-bounce'
           : 'text-white hover:text-yellow-400'
       }`}
     >
